@@ -1,0 +1,36 @@
+{
+  "name": "fitnesstracker",
+  "version": "1.0.0",
+  "description": "A simple app to track activities, fitness levels and find others like you. [Try it out](Add heroku link)!",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.1.2",
+    "cookie-parser": "^1.4.4",
+    "es6-promisify": "^6.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.2.0",
+    "init": "^0.1.2",
+    "mongoose": "^5.7.11",
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "slug": "^1.1.0",
+    "validator": "^12.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwlam8790/fitnessTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwlam8790/fitnessTracker/issues"
+  },
+  "homepage": "https://github.com/dwlam8790/fitnessTracker#readme"
+}
