@@ -14,7 +14,7 @@ exports.send = async (options) => {
     //store generated html so it can be passed
     const html = generateHTML(options.filename, options);
     //email details
-    from_email = new helper.Email("Daksh from GetFit <dakshshah96@gmail.com>");
+    from_email = new helper.Email("Diana from FitLiftLife <dwlam8790@gmail.com>");
     to_email = new helper.Email(options.user.email);
     subject = options.subject;
     content = new helper.Content("text/html", html);
