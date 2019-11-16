@@ -20,7 +20,7 @@ exports.logout = (req, res) => {
 //check if user is logged in
 exports.isLoggedIn = (req, res, next) => {
     if (req.isAuthenticated()) {
-        next(); // logged in
+        next(); //logged in
         return;
     }
     req.flash('error', 'You must be logged in to do that!');
@@ -29,7 +29,7 @@ exports.isLoggedIn = (req, res, next) => {
 
 //forgot password flow
 exports.forgot = async (req, res) => {
-    // check user exists
+    //check user exists
     const user = await User.findOne({ email: req.body.email });
     if (!user) {
         req.flash('error', 'No account exists with that email address!');
@@ -77,7 +77,7 @@ exports.confirmedPasswords = (req, res, next) => {
 };
 //password update flow
 exports.update = async (req, res) => {
-    // match url params to database entry
+    //match url params to database entry
     const user = await User.findOne({
         resetPasswordToken: req.params.token,
         resetPasswordExpires: { $gt: Date.now() }

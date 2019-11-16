@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .single__hero
+        .hero-contents
+            img.single__image(src=`${profile.photo}`)
+            .single__title
+                h2
+                    a(href=`/profile/${profile.slug}`) #{profile.name}
+                p #{profile.gender}, #{profile.age} years old
+    .single__details.inner
+        - let firstName = profile.name.split(' ')[0]
+        h3 About #{firstName}
+        p= profile.about
+        - var dd = profile.created.getDate();
+        - var mm = profile.created.getMonth() + 1;
+        - var yyyy = profile.created.getFullYear();
+        p <strong>#{firstName} is enjoying GetFit since #{`${mm}/${dd}/${yyyy}`}.</strong>
+        p
+            if (!user)
+                a(href="/register") Sign up today to get your profile →
+            else
+                a(href="/profile/edit") Edit your profile →

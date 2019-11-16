@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .inner
+        form(action="/account" method="POST" class="card")
+            h2= title
+            .form-contents
+                label(for="name") Name
+                input(type="text" name="name" value=user.name)
+                label(for="email") Email Address
+                input(type="email" name="email" value=user.email)
+                input.button(type="submit" value="Update Details")
+        p
+            a(href="/profile/me") Go back to profile
+            |  |  
+            a(href="/fitness") See your fitness data

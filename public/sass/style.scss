@@ -1,2 +1,16 @@
-/*testing out scss to have features that aren't standard to CSS stylesheet*/
+@import 'partials/variables';
+@import 'partials/layout';
+@import 'partials/normalize';
+@import 'partials/typography';
+@import 'partials/forms';
+@import 'partials/search';
+@import 'partials/flashes';
+@import 'partials/nav';
+@import 'partials/table';
+@import 'partials/profile';
 @import 'partials/fitness';
+@import 'partials/tag';
+@import 'partials/single';
+@import 'partials/heart';
+@import 'partials/helpers';
+@import 'partials/landing'

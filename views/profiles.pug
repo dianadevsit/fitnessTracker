@@ -1,0 +1,13 @@
+extends layout
+
+include mixins/_profileCard
+
+block content
+    .inner
+        h2= title
+        if (!user)
+            p Join others like you on GetFit.     
+                a(href="/register") Register Now →
+        .profiles
+            each profile in profiles
+                +profileCard(profile)

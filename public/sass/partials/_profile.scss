@@ -1,0 +1,90 @@
+.profiles {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.profile {
+  background:#ecf0f1;
+  margin: 10px 0;
+  border-radius: 10px;
+  width:30%;
+  box-shadow: $shad;
+  &--wide {
+    width: 100%;
+  }
+  &__details {
+    padding: 0.5rem 2rem;
+    min-height: 140px;
+    /*position: relative;
+    background: white;
+    margin-top: 20px;*/
+    p {
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+  }
+  &__photo {
+    padding: 20px 0;
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #8e44ad;*/
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+@media all and (max-width: 850px) {
+    .profile {
+      width: 48%;
+    }
+    .profiles {
+      padding: 0 20px;
+    }
+  }
+  @media all and (max-width: 550px) {
+    .profile {
+      width: 100%;
+    }
+  }
+
+.profile__actions {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 10px;
+}
+
+.profile__action {
+  font-size: 10px;
+  svg {
+    width: 25px;
+  }
+  &--edit {
+    a {
+      border-bottom: 0;
+    }
+  }
+}
+
+img.card-hero {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile h5 {
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-align: center;
+  color: #7f8c8d;
+  margin: 20px 0;
+}

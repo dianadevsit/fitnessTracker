@@ -1,0 +1,17 @@
+mixin registerForm()
+    p Already have an account? 
+        a(href=`/login`) Log In →
+    p Make an account or use the test account
+    p <strong>Email</strong>: test@example.com | <strong>Password</strong>: test
+    form(action="/register" method="POST" class="card")
+        h2 Register
+        .form-contents
+            label(for="name") Name
+            input(type="text" placeholder="John Doe" name="name" required) 
+            label(for="email") Email
+            input(type="email" placeholder="someone@example.com" name="email" required) 
+            label(for="password") Password
+            input(type="password" name="password" required)
+            label(for="password-confirm") Confirm Password
+            input(type="password" name="password-confirm" required)
+            input.button(type="submit" value="Register →")
